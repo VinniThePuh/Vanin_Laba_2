@@ -1,10 +1,8 @@
-package com.example.lukyanov_laba_2;
+package com.example.vanin_laba_2;
 import android.content.Intent;
 import android.os.Bundle;
 import androidx.appcompat.app.AppCompatActivity;
 
-import java.util.ArrayList;
-import java.util.List;
 public class SplashActivity extends AppCompatActivity {
 
     @Override
@@ -13,7 +11,6 @@ public class SplashActivity extends AppCompatActivity {
         Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
 
-        //загрузка json
         fetchData process = new fetchData();
         process.execute();
 

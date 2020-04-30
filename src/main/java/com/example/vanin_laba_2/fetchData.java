@@ -1,6 +1,6 @@
-package com.example.lukyanov_laba_2;
+package com.example.vanin_laba_2;
 import android.os.AsyncTask;
-import android.widget.ListView;
+
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -12,7 +12,6 @@ import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.ArrayList;
-import java.util.List;
 
 public class fetchData extends AsyncTask<Void, Void, Void> {
     String data = "";

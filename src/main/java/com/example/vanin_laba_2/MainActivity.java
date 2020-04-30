@@ -1,4 +1,4 @@
-package com.example.lukyanov_laba_2;
+package com.example.vanin_laba_2;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
 import android.os.Bundle;
@@ -14,19 +14,10 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         while (fetchData.done != true) {}
-        //
-        //список
-        //
         imageList = (ListView) findViewById(R.id.elemList);
         imageList.setAdapter(new CustomListAdapter(this, fetchData.arrPic, fetchData.arrText, fetchData.arrName));
-        //
-        //пейджер
-        //
         pager = (ViewPager) findViewById(R.id.pagerList);
         pager.setAdapter(new CustomPagerAdapter(this, fetchData.arrPic, fetchData.arrText, fetchData.arrName));
-        //
-        // слушатель выбора в списке
-        //
         AdapterView.OnItemClickListener itemListener = new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View v, int position, long id) {

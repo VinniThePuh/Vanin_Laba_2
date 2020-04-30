@@ -1,4 +1,4 @@
-package com.example.lukyanov_laba_2;
+package com.example.vanin_laba_2;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.AsyncTask;

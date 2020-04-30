@@ -1,4 +1,4 @@
-package com.example.lukyanov_laba_2;
+package com.example.vanin_laba_2;
 
 import org.junit.Test;
 
